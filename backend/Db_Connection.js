@@ -29,7 +29,7 @@ const ProductsSchema = new mongoose.Schema({
 
 // Collection Created of database tables or json format 
 const products = mongoose.model("products", ProductsSchema);
-const new_data = mongoose.model("new_data1", ProductsSchema);
+const new_data1 = mongoose.model("new_data1", ProductsSchema);
 
 
 // Create document or insert data into database 
@@ -39,7 +39,8 @@ const reactProducts = new products({
     Price: 10000,
     Categroy: "Android"
 });
-const reactnew_data1 = new new_data({
+
+const reactNew_data1 = new new_data1({
     name: "Oppo A6",
     Brand: "A22021",
     Price: 10000,
@@ -47,3 +48,4 @@ const reactnew_data1 = new new_data({
 });
 
 reactProducts.save();
+reactNew_data1.save();
