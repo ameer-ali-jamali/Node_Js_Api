@@ -16,18 +16,6 @@
 //     console.log(response);
 // };
 
-// //put
-// app.get("/update/:id", async (req, resp) => {
-//     let upid = req.params.id
-//     let upname = req.body.name
-//     let upemail = req.body.email
-
-
-
-// });
-
-
-
 
 
 // app.listen(port, () => {
