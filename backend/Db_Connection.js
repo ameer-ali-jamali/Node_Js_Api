@@ -1,8 +1,9 @@
 // Mongoose Connection into Mongodb Database
 // Connection creation and cration a new database
 
+const { Int32 } = require("mongodb");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/std")
+mongoose.connect("mongodb://localhost:27017/local_data")
     .then(() => console.log("Connection Successfull......."))
     .catch((err) => console.log(err));
 
@@ -25,4 +26,24 @@ const ProductsSchema = new mongoose.Schema({
 //  Whereas a Mongoose model provides an interface to the databae for creating,
 //  querying, updating, deleting records, etc..
 
-const Products = new mongoose.model("Products", ProductsSchema);
+
+// Collection Created of database tables or json format 
+const products = mongoose.model("products", ProductsSchema);
+const new_data = mongoose.model("new_data1", ProductsSchema);
+
+
+// Create document or insert data into database 
+const reactProducts = new products({
+    name: "Oppo A6",
+    Brand: "A22021",
+    Price: 10000,
+    Categroy: "Android"
+});
+const reactnew_data1 = new new_data({
+    name: "Oppo A6",
+    Brand: "A22021",
+    Price: 10000,
+    Categroy: "Android"
+});
+
+reactProducts.save();
