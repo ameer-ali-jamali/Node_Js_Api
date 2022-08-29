@@ -2,10 +2,10 @@
   "name": "node-test.js",
   "version": "1.0.0",
   "description": "",
-  "main": "delete_api.js",
+  "main": "get_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon delete_api.js"
+    "start": "nodemon get_api.js"
   },
   "author": "",
   "license": "ISC",

@@ -11,6 +11,7 @@ const app = express();
 app.use(express.json());
 
 const User_dataSchema = new mongoose.Schema({
+    std_id: String,
     first_name: String,
     last_name: String,
     email: String,
