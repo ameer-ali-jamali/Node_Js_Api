@@ -21,6 +21,7 @@ const User_dataSchema = new mongoose.Schema({
 });
 
 const date_ob = new Date();
+
 date = ("0" + date_ob.getDate()).slice(-2);
 month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
 year = date_ob.getFullYear();
