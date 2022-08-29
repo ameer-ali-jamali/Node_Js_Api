@@ -13,7 +13,6 @@ const ProductsSchema = new mongoose.Schema({
 const products = mongoose.model("products", ProductsSchema);
 
 let SendDatadb = async () => {
-
     try {
         const reactProducts = new products({
             name: "Oppo A6",
