@@ -2,10 +2,10 @@
   "name": "node-test.js",
   "version": "1.0.0",
   "description": "",
-  "main": "db_connect.js",
+  "main": "post_api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon db_connect.js"
+    "start": "nodemon post_api.js"
   },
   "author": "",
   "license": "ISC",
