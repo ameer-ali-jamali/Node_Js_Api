@@ -30,8 +30,9 @@ minutes = date_ob.getMinutes();
 seconds = date_ob.getSeconds();
 
 const user_input_data_model = mongoose.model('Aptech_Students', User_dataSchema);
+
 app.post("/user", async (req, resp) => {
-    const result = await new user_input_data_model(req.body);
+    const result = await new user_input_data_model(req.body)
     result.save()
         .then(() => {
             resp.send(` Result : Your Data Submited Successfully

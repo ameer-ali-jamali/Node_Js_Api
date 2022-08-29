@@ -33,11 +33,11 @@ const user_input_data_model = mongoose.model('Aptech_Students', User_dataSchema)
 
 app.delete("/delete/:id", async (req, resp) => {
     try {
-        const result = await user_input_data_model.findByIdAndDelete(req.params.id)
+        const result = await user_input_data_model.findByIdAndDelete(req.params.id);
         resp.send(` Result : Your Data Deleted Successfully
         Currunt Date : ${date}/${month}/${year} ${hours}:${minutes}:${seconds}
          ${result}
-        `)
+        `);
         console.log(`Your Data Successfully get from Database....
         ${result}`)
     } catch (err) {
@@ -46,7 +46,7 @@ app.delete("/delete/:id", async (req, resp) => {
         ${date}/${month}/${year} ${hours}:${minutes}:${seconds} 
          ${err}`)
     }
-})
+});
 
 app.listen(port, () => {
     console.log(`Local Server Working On  http://localhost:${port}`)

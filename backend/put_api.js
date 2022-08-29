@@ -49,7 +49,7 @@ app.put("/update/:id", async (req, resp) => {
         ${date}/${month}/${year} ${hours}:${minutes}:${seconds} 
          ${err}`)
     }
-})
+});
 
 app.listen(port, () => {
     console.log(`Local Server Working On  http://localhost:${port}`)
