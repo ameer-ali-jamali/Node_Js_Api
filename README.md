@@ -1,5 +1,5 @@
 # Node_Js_multiple_apis
-This is my first ecperiance in node js and my brother gave me a task ..
+This is my first experiance in node js and my brother gave me a task ..
 to create apis..
 example..
 1...post api
