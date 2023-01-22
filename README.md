@@ -1,5 +1,5 @@
 # Node.js Apis
-# Crud Oeration Apis
+# Crud Operaton Apis
 ## Getting Started
 Download the code from repository and follow below given instructions.
 
@@ -28,4 +28,4 @@ npm test
 * [Heroku](http://heroku.com/)
 
 ## Author
-* **Ameer Ali Jamlai**
+* **Ameer Ali Jamali**
